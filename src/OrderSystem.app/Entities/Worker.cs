@@ -5,7 +5,7 @@ namespace OrderSystem.Entities
     {
         public string Name { get; set; }
         public WorkerLevel Level { get; set; }
-        public double baseSalary { get; set; }
+        public double _baseSalary { get; set; }
         public Department Department { get; set; }
         public List<HourContract> Contracts { get; set; } = new List<HourContract>();
     
@@ -17,7 +17,7 @@ namespace OrderSystem.Entities
         {
             Name = name;
             Level = level;
-            this.baseSalary = baseSalary;
+            this._baseSalary = baseSalary;
             Department = department;
         }
 
@@ -32,7 +32,7 @@ namespace OrderSystem.Entities
         }
         public double Income(int yaer, int month)
         {
-            double sum = baseSalary;
+            double sum = _baseSalary;
             foreach( HourContract contract in Contracts)
             {
                 if(contract.Date.Year == yaer && contract.Date.Month == month)

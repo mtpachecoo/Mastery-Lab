@@ -5,7 +5,7 @@ namespace OrderSystem.Entities
     public class HourContract
     {
         public DateTime Date { get; set; }
-        public double valuePerHour { get; set; }
+        public double _valuePerHour { get; set; }
         public int Hours { get; set; }
         
         public HourContract()
@@ -14,13 +14,13 @@ namespace OrderSystem.Entities
         public HourContract(DateTime date, double valuePerHour, int hours)
         {
             Date = date;
-            this.valuePerHour = valuePerHour;
+            _valuePerHour = valuePerHour;
             Hours = hours;
         }
 
         public double TotalValue()
         {
-            return Hours * valuePerHour;
+            return Hours * _valuePerHour;
         }
     }
 }

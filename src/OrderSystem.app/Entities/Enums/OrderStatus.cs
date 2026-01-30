@@ -1,6 +1,6 @@
 namespace OrderSystem.Entities.Enums
 {
-    enum OrderStatus : int
+    public enum OrderStatus : int
     {
         PendingPayment = 0,
         Processing = 1,

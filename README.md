@@ -7,6 +7,7 @@ Desenvolver um sistema que gerencie trabalhadores, seus departamentos e múltipl
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
 * **C# / .NET 10**
+
 **Enums:** Utilizados para padronizar níveis de experiência (WorkerLevel).
 **Composição de Objetos:** Implementação da relação "tem-muitos" entre `Worker` e `HourContract`, evitando herança desnecessária.
 **LINQ / Manipulação de Listas:** Lógica para filtrar e somar valores de contratos baseados em mês e ano.

@@ -2,5 +2,6 @@
   <Folder Name="/src/">
     <Project Path="src/BlogSystem.app/BlogSystem.app.csproj" />
     <Project Path="src/OrderSystem.app/OrderSystem.app.csproj" />
+    <Project Path="src/PedingSystem.app/PedingSystem.app.csproj" />
   </Folder>
 </Solution>

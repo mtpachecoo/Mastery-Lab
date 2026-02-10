@@ -1,4 +1,4 @@
-namespace PedingSystem.app.Entities
+namespace PendingSystem.app.Entities
 {
     public class Product
     {

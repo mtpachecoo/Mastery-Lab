@@ -1,4 +1,4 @@
-namespace PedingSystem.app.Entities.Enums
+namespace PendingSystem.app.Entities.Enums
 {
     public enum OrderStatus : int
     {

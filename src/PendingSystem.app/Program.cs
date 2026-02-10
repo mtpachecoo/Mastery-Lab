@@ -1,4 +1,15 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using PendingSystem.app.Entities;
+using PendingSystem.app.Entities.Enums;
+using System.Globalization;
+
+
+
+
 namespace PendingSystem.app
 {
     class Program
@@ -6,7 +17,7 @@ namespace PendingSystem.app
         static void Main(string[] args)
         {
 
-         System.Console.WriteLine("Enter client data:");
+            System.Console.WriteLine("Enter client data:");
             System.Console.Write("Name: ");
             string name = Console.ReadLine();
             System.Console.Write("Email: ");
@@ -17,7 +28,7 @@ namespace PendingSystem.app
             System.Console.WriteLine("Enter order data:");
             System.Console.Write("Status: ");
             OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
-            Order order1 = new Order(DateTime.Now, status, client1, new List<OrderItem>());  
+            Order order1 = new Order(DateTime.Now, status, client1, new List<OrderItem>());
 
             System.Console.Write("How many items to this order? ");
             int n = int.Parse(Console.ReadLine());
@@ -28,7 +39,7 @@ namespace PendingSystem.app
                 System.Console.Write("Product name: ");
                 string productName = Console.ReadLine();
                 System.Console.Write("Product price: ");
-                double productPrice = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                double productPrice = double.Parse(Console.ReadLine());
                 System.Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
                 Product product = new Product(productName, productPrice);

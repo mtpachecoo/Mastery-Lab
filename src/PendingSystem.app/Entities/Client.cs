@@ -1,7 +1,7 @@
-using System.Text;
 
 namespace PendingSystem.app.Entities
 {
+
     public class Client
     {
         public string NameClient { get; set; }
@@ -17,6 +17,15 @@ namespace PendingSystem.app.Entities
             BirthDate = birthdate;
         }
 
-      
+        
+        public override string ToString()
+        {
+            return NameClient
+                + " ("
+                + BirthDate.ToString("dd/MM/yyyy")
+                + ") - "
+                + EmailClient;
+        }
+
     }
 }

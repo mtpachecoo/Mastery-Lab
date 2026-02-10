@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using PendingSystem.app.Entities.Enums;
+using System.Text;
+using PendingSystem.app.Entities;
 
 namespace PendingSystem.app.Entities
 {
@@ -53,7 +55,7 @@ namespace PendingSystem.app.Entities
             sb.AppendLine("Client: " + Client);
             sb.AppendLine("Order items:");
 
-            foreach ( OrdemItem items in orderItems)
+            foreach ( OrderItem items in orderItems)
             {
                 sb.AppendLine(items.ToString());
             }

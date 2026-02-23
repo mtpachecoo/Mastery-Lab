@@ -1,3 +1,5 @@
+using System.Text;
+
 public class Employee
 {
     public string Name{get; set;}
@@ -13,8 +15,18 @@ public class Employee
         ValuePerHour = valueperhour;
     }
 
-    public double Payment()
+    public virtual double CalculateSalary()
     {
         return ValuePerHour * Hours;
-    } 
+    }
+
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine(" ");
+        sb.AppendLine("PAYMENTS: ");
+        sb.Append(Name);
+        sb.Append( " = $ " + CalculateSalary().ToString("F2")); 
+        return sb.ToString();
+    }
 }

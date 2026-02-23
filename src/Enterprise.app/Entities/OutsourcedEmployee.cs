@@ -11,4 +11,9 @@ public class OutsourcedEmployee : Employee
     {
         AdditionalCharge = additionalcharge;
     }
+
+    public override double CalculateSalary()
+    {
+        return base.CalculateSalary() + (AdditionalCharge * 1.1);
+    }
 }

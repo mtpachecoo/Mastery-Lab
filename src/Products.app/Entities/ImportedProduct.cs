@@ -7,8 +7,9 @@ public class ImportedProduct : Product
     public ImportedProduct(string name, double price, double customsFee) 
         : base(name, price)
     {
-        base.Price += CustomsFee;
         CustomsFee = customsFee;
+        Price += CustomsFee;
+        
     }
 
     public double TotalPrice()
@@ -18,7 +19,7 @@ public class ImportedProduct : Product
     }
     public override string PriceTag()
     {
-        return base.PriceTag() + "Customs fee: $ " + CustomsFee ;
+        return Name + " $ " + Price + $" (Customs fee: $ {CustomsFee})" ;
     }
 
 }

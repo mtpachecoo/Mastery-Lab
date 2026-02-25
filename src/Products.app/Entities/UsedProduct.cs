@@ -10,7 +10,7 @@ public class UsedProduct : Product
 
     public override string PriceTag()
     {
-       return base.PriceTag() + $" (Manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")})"; 
+       return Name + " (Used) " + " $ " + Price + $" (Manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")})"; 
     }
 
 }

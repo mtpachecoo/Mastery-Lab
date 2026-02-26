@@ -45,4 +45,4 @@ System.Console.WriteLine("PRICE TAGS:");
 foreach(Product p in products)
 {
     System.Console.WriteLine(p.PriceTag());
-}
+}   

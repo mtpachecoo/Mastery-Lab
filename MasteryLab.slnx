@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/Products.app/Products.app.csproj" />
+    <Project Path="src/Shapes.app/Shapes.app.csproj" />
     <Project Path="src/Shopping.app/Shopping.app.csproj" />
     <Project Path="src/Enterprise.app/Enterprise.app.csproj" />
     <Project Path="src/OrderSystem.app/OrderSystem.app.csproj" />

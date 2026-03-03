@@ -34,4 +34,7 @@ for(int i = 1; i <= n; i++)
 
 }
 
-foreach
+foreach (Shape shape in shapes)
+{
+    System.Console.WriteLine(shape.Area().ToString("F2"));
+}
